@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="no1" style=" width: 500px ; height: 500px ; position: absolute;">
+        <h2> DO YOU LOVE ME </h2>
+        <input type="button" value="YES" onclick="yes()">
+        <input id="no" type="button" value="NO" onmouseover="bay()" style="position: absolute">
+    </div>
+    <script>
+        function yes() {
+            alert(" I LOVE YOU ")
+        }
+
+        function bay() {
+            var a = Math.random() * 500;
+            var b = Math.random() * 500;
+            document.getElementById("no").style.left = a + "px";
+            document.getElementById("no").style.top = b + "px";
+        }
+    </script>
+</body>
+
+</html>
